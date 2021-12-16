@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17A09F7196391D3A657D5B61 /* Pods_MyTaxiExam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF021213A9C351317F2BB74E /* Pods_MyTaxiExam.framework */; };
 		A78330CC276B1FBC003ED6B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78330CB276B1FBC003ED6B5 /* AppDelegate.swift */; };
 		A78330CE276B1FBC003ED6B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78330CD276B1FBC003ED6B5 /* SceneDelegate.swift */; };
 		A78330D0276B1FBC003ED6B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78330CF276B1FBC003ED6B5 /* ViewController.swift */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8ACC8F8958C5D22993084832 /* Pods-MyTaxiExam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTaxiExam.release.xcconfig"; path = "Target Support Files/Pods-MyTaxiExam/Pods-MyTaxiExam.release.xcconfig"; sourceTree = "<group>"; };
+		A253C15EA8B97BBCCBBD283F /* Pods-MyTaxiExam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTaxiExam.debug.xcconfig"; path = "Target Support Files/Pods-MyTaxiExam/Pods-MyTaxiExam.debug.xcconfig"; sourceTree = "<group>"; };
 		A78330C8276B1FBC003ED6B5 /* MyTaxiExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTaxiExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A78330CB276B1FBC003ED6B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A78330CD276B1FBC003ED6B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		A78330D7276B1FBD003ED6B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A78330DA276B1FBD003ED6B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A78330DC276B1FBD003ED6B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF021213A9C351317F2BB74E /* Pods_MyTaxiExam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTaxiExam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A09F7196391D3A657D5B61 /* Pods_MyTaxiExam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6AD54F6E435185BF10CA0E4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF021213A9C351317F2BB74E /* Pods_MyTaxiExam.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A12B30C2026DEF5161794FA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A253C15EA8B97BBCCBBD283F /* Pods-MyTaxiExam.debug.xcconfig */,
+				8ACC8F8958C5D22993084832 /* Pods-MyTaxiExam.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A78330BF276B1FBC003ED6B5 = {
 			isa = PBXGroup;
 			children = (
 				A78330CA276B1FBC003ED6B5 /* MyTaxiExam */,
 				A78330C9276B1FBC003ED6B5 /* Products */,
+				A12B30C2026DEF5161794FA4 /* Pods */,
+				6AD54F6E435185BF10CA0E4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A78330DF276B1FBD003ED6B5 /* Build configuration list for PBXNativeTarget "MyTaxiExam" */;
 			buildPhases = (
+				5DB95232A1CE49AD697D477C /* [CP] Check Pods Manifest.lock */,
 				A78330C4276B1FBC003ED6B5 /* Sources */,
 				A78330C5276B1FBC003ED6B5 /* Frameworks */,
 				A78330C6276B1FBC003ED6B5 /* Resources */,
+				059269AF4111B24F5D04D959 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		059269AF4111B24F5D04D959 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyTaxiExam/Pods-MyTaxiExam-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyTaxiExam/Pods-MyTaxiExam-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyTaxiExam/Pods-MyTaxiExam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DB95232A1CE49AD697D477C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyTaxiExam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A78330C4276B1FBC003ED6B5 /* Sources */ = {
@@ -288,6 +357,7 @@
 		};
 		A78330E0276B1FBD003ED6B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A253C15EA8B97BBCCBBD283F /* Pods-MyTaxiExam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,6 +385,7 @@
 		};
 		A78330E1276B1FBD003ED6B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ACC8F8958C5D22993084832 /* Pods-MyTaxiExam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
